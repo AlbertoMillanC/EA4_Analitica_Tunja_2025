@@ -1,0 +1,9 @@
+# Entornos y archivos temporales
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Archivos originales con datos personales (no subir al repo)
+*SOLICITUD_CAMARA*
+*.xlsx
