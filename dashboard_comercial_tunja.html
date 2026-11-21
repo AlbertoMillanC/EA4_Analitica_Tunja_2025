@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boceto Dashboard Comercial Tunja 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 p-6">
+  <div class="max-w-4xl mx-auto space-y-6">
+    <header class="bg-slate-800 p-5 rounded-xl border border-slate-700">
+      <h1 class="text-2xl font-bold">Análisis Comercial Tunja 2025 (Versión Inicial)</h1>
+      <p class="text-sm text-slate-400 mt-1">Boceto preliminar con conteo básico de empresas activas (MA).</p>
+    </header>
+
+    <section class="grid grid-cols-3 gap-4">
+      <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+        <div class="text-xs text-slate-400">Total Empresas Activas</div>
+        <div class="text-2xl font-bold mt-1">11,802</div>
+      </div>
+      <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+        <div class="text-xs text-slate-400">Persona Natural</div>
+        <div class="text-2xl font-bold text-sky-400 mt-1">8,720</div>
+      </div>
+      <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+        <div class="text-xs text-slate-400">Persona Jurídica</div>
+        <div class="text-2xl font-bold text-emerald-400 mt-1">3,082</div>
+      </div>
+    </section>
+
+    <section class="bg-slate-800 p-5 rounded-xl border border-slate-700">
+      <h2 class="text-base font-semibold mb-3">Distribución Básica: Persona Natural vs. Jurídica</h2>
+      <div class="h-64"><canvas id="chartBase"></canvas></div>
+    </section>
+  </div>
+
+  <script>
+    new Chart(document.getElementById('chartBase'), {
+      type: 'bar',
+      data: {
+        labels: ['Persona Natural', 'Persona Jurídica'],
+        datasets: [{
+          label: 'Empresas Activas 2025',
+          data: [8720, 3082],
+          backgroundColor: ['#38bdf8', '#34d399']
+        }]
+      },
+      options: { responsive: true, maintainAspectRatio: false }
+    });
+  </script>
+</body>
+</html>
