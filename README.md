@@ -5,11 +5,12 @@ Proyecto para la **Evidencia de Aprendizaje 4 (Unidad 3)** de Analítica de Dato
 ## Propósito de la actividad
 Construir un dashboard interactivo con ayuda de IA (*vibe coding*) para responder una pregunta de interés usando técnicas del curso (limpieza de datos, manejo de faltantes, filtrado y agrupación por categorías), verificar al menos un resultado fuera del dashboard y diseñar una rúbrica propia sobre 100 puntos.
 
-## Pregunta de investigación (borrador inicial)
-¿Cómo se distribuyen los comercios y empresas de Tunja según su tipo de organización (Persona Natural vs. Persona Jurídica), su actividad económica (rubros) y su ubicación por barrios?
+## Pregunta de investigación
+¿Cómo se distribuyen las empresas activas de Tunja en 2025 según su naturaleza jurídica (Persona Natural vs. Persona Jurídica), sus rubros comerciales y su ubicación por barrios?
 
-## Fuente de datos
-* Listados de matrículas de la **Cámara de Comercio de Tunja** (Municipio `15001`).
+## Fuente de datos y alcance
+* Listado de matrículas de la **Cámara de Comercio de Tunja — Corte 2025** (Municipio `15001`).
+* **Alcance:** Solo matrículas activas (`MA`) y conteo de empresas (sin métricas de dinero ni ingresos).
 * Por privacidad, se anonimizarán NITs, nombres, direcciones, teléfonos y correos electrónicos antes de construir las visualizaciones.
 
 ## Entregables planeados
