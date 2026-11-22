@@ -1,0 +1,12 @@
+{
+  "anio_corte": 2025,
+  "registros_brutos": 20978,
+  "descartados_inactivos_IA": 533,
+  "activos_totales_MA": 20445,
+  "descartados_establecimientos": 8643,
+  "empresas_activas_final": 11802,
+  "persona_natural": 8720,
+  "persona_juridica": 3082,
+  "nulos_barrio_imputados": 65,
+  "nulos_fecha_matricula": 0
+}
