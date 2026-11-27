@@ -347,11 +347,13 @@ function render() {
         label: 'Registros',
         data: [aud.registros_brutos, aud.activos_totales_MA, aud.empresas_activas_final, aud.nulos_barrio_imputados],
         backgroundColor: ['#64748b', '#6366f1', '#10b981', '#f59e0b'],
-        borderRadius: 4
+        borderRadius: 4,
+        minBarLength: 8
       }]
     },
     options: {
       responsive: true, maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
       plugins: { legend: { display: false } },
       scales: { y: { beginAtZero: true } }
     }
